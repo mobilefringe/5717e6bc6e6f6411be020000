@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Update each web pages SEO to set values for {{meta_title}}, {{meta_description}}, {{meta_keywords}} -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{meta_title}}</title>
+
+   
+    <!--CSS-->
+    <link href="/application.css" rel="stylesheet">
+    <!--Javascript-->
+    <script src="/application.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--Header Content-->
+    </header>
+    <section id="content">
+        <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
+        {{yield}}
+    </section>
+    <footer>
+        <!--Footer Content-->
+    </footer>
+</body>
+
+</html>
