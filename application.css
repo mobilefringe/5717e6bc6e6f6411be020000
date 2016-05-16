@@ -1,0 +1,44 @@
+/*Created 2015-02-28 by the CodeCloud Team
+This is a Saas file has an 'Asset Type' of SCSS. CSS will be compiled when saving.
+For more information on asset types please see http://www.getcodecloud.com/docs#SaSS
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    color:#777;
+    font-family:'Open Sans';
+    background-color:black;
+}
+
+#content{
+    margin-top:100px;
+    font-size:150px;
+    text-align:center;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body{
+      padding:10px;
+  }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+ body{
+      padding:30px;
+  }
+    
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   body{
+      padding:50px;
+  }
+    
+    
+}
