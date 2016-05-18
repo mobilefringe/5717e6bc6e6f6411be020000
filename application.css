@@ -10,35 +10,47 @@ body{
     background-color:blacks;
 }
 
-#content{
-    margin-top:100px;
-    font-size:150px;
-    text-align:center;
+.page {
+  background-color:black;
 }
 
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  body{
-      padding:10px;
-  }
-    
+#locationsWrapper { 
+  /* width: 100%; */
+  display: table;
+  /* padding: 5px; */
+  position: absolute;
+  /* height: 80%; */
+  width: 100%;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
- body{
-      padding:30px;
-  }
-    
-    
+#locationsWrapper .location {
+  float: left;
+  margin: 11px;
+  display: table;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-   body{
-      padding:50px;
-  }
-    
-    
+.location-inner{
+  width: 185px;
+  height: 185px;
+  display: table-cell;
+  background-color: white;
+  vertical-align:middle;
+  text-align:center;
+}
+
+#locationsWrapper .location img{
+  max-width: 80%;
+  max-height: 80%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+
+#locationsWrapper .location.visited img{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
+  filter: alpha(opacity=1); /* For IE8 and earlier */
+
 }
